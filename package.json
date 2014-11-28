@@ -1,0 +1,18 @@
+{
+  "name": "yog2",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "env NODE_DEBUG=yog/dispatcher,yog/loader,yog/components YOG_DEBUG=true node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fex-team/yog2.git"
+  },
+  "author": "fis@baidu.com",
+  "license": "BSD",
+  "dependencies": {
+    "yog2-kernel": "0.0.0"
+  }
+}
