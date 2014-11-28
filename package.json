@@ -13,6 +13,6 @@
   "author": "fis@baidu.com",
   "license": "BSD",
   "dependencies": {
-    "yog2-kernel": "0.0.0"
+    "yog2-kernel": "0.0.1"
   }
 }

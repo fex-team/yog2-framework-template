@@ -69,5 +69,5 @@ module.exports.dispatcher = {
     *
     ***************************************************************************/
 
-    //appPath: require('path').dirname(require.main.filename) + '/app'
+    // appPath: yog.ROOT_PATH + '/app'
 }
