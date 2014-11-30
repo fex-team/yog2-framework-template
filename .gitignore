@@ -1,3 +1,10 @@
+# Deploy
+/conf/app/**
+/conf/fis/**
+/static/**
+/views/**
+/app/**
+
 # Webstorm
 .idea
 
