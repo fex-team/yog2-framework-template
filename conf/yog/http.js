@@ -2,8 +2,8 @@ module.exports.http = {
     middleware: [
         'favicon',
         'compression',
-        'responseTime',
         'static',
+        'responseTime',
         'cookieParser',
         'bodyParser',
         'log',
@@ -14,4 +14,4 @@ module.exports.http = {
         'notFound',
         'error'
     ]
-}
+};
