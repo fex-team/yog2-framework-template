@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "debug": "env NODE_DEBUG=yog/dispatcher,yog/loader,yog/components YOG_DEBUG=true node bin/www"
+    "debug": "env NODE_DEBUG=yog/dispatcher,yog/loader,yog/plugins YOG_DEBUG=true node bin/www"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,6 @@
   "author": "fis@baidu.com",
   "license": "BSD",
   "dependencies": {
-    "yog2-kernel": "0.0.1"
+    "yog2-kernel": "0.0.2"
   }
 }
