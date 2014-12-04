@@ -1,6 +1,6 @@
 {
   "name": "yog2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "author": "fis@baidu.com",
   "license": "BSD",
   "dependencies": {
-    "yog2-kernel": "0.0.3"
+    "yog2-kernel": "0.0.4"
   }
 }
