@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "debug-win": "set NODE_DEBUG=yog/dispatcher,yog/loader,yog/plugins & set YOG_DEBUG=true & node bin/www",
+    "debug-win": "set NODE_DEBUG=yog/dispatcher,yog/loader,yog/plugins&set YOG_DEBUG=true&node bin/www",
     "debug": "env NODE_DEBUG=yog/dispatcher,yog/loader,yog/plugins YOG_DEBUG=true node bin/www"
   },
   "repository": {
@@ -15,6 +15,6 @@
   "license": "BSD",
   "dependencies": {
     "lodash": "2.4.1",
-    "yog2-kernel": "0.0.9"
+    "yog2-kernel": "0.0.10"
   }
 }
