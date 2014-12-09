@@ -1,9 +1,10 @@
 {
   "name": "yog2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "debug-win": "set NODE_DEBUG=yog/dispatcher,yog/loader,yog/plugins & set YOG_DEBUG=true & node bin/www",
     "debug": "env NODE_DEBUG=yog/dispatcher,yog/loader,yog/plugins YOG_DEBUG=true node bin/www"
   },
   "repository": {
@@ -13,6 +14,6 @@
   "author": "fis@baidu.com",
   "license": "BSD",
   "dependencies": {
-    "yog2-kernel": "0.0.4"
+    "yog2-kernel": "0.0.8"
   }
 }
