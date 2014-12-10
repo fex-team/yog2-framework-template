@@ -1,13 +1,15 @@
 /***
- * Yog自动路由配置，用于管理URL与action之间的映射关系，默认的路由规则为
+ * Yog路由配置
+ * 
+ * 用于管理URL与action之间的映射关系，默认的路由规则为
  *
- * http://www.example.com/home/index => app/home/index.js
- * http://www.example.com/home/doc/detail => app/home/doc/detail.js
+ * http://www.example.com/home/index => app/home/action/index.js
+ * http://www.example.com/home/doc/detail => app/home/action/doc/detail.js
  *
  * 如果上述规则没有匹配成功，会尝试匹配同名文件夹下的index.js，即
  *
- * http://www.example.com/home/index => app/home/index/index.js
- * http://www.example.com/home/doc/detail => app/home/doc/detail/index.js
+ * http://www.example.com/home/index => app/home/action/index/index.js
+ * http://www.example.com/home/doc/detail => app/home/action/doc/detail/index.js
  * 
  */
 module.exports.dispatcher = {
@@ -21,16 +23,16 @@ module.exports.dispatcher = {
     * 你可以为一个app设置一个别名
     * router.use('/custom', yog.dispatcher.router('home'))
     * 
-    * http://www.example.com/custom => app/home/index/index.js
+    * http://www.example.com/custom => app/home/action/index/index.js
     *
     * 你可以直接建立一个特殊的URL
     * router.get('/somespecial', yog.dispatcher.action('home/doc/detail'))
     *
-    * http://www.example.com/somespecial => app/home/doc/detail.js
+    * http://www.example.com/somespecial => app/home/action/doc/detail.js
     *
     * 你也可以在此处将router当成app使用，加载任意中间件
     * 
-    ***************************************************************************/    
+    ***************************************************************************/
     rootRouter: function(router){
         return router;
     },
@@ -43,10 +45,10 @@ module.exports.dispatcher = {
     * 
     * 显式声明的Router会作为Action去查找
     *
-    * http://www.example.com/doc/detail => app/home/doc/detail/index.js
+    * http://www.example.com/doc/detail => app/home/action/doc/detail.js
     ***************************************************************************/
 
-    // defaultRouter: 'home',
+    defaultRouter: 'home',
 
     /***************************************************************************
     * 
@@ -55,10 +57,10 @@ module.exports.dispatcher = {
     *
     * 当没有制定Action时，会使用默认Action
     *
-    * http://www.example.com/home => app/home/index.js
+    * http://www.example.com/home => app/home/action/index.js
     ***************************************************************************/
 
-    // defaultAction: 'index',
+    defaultAction: 'index',
 
     /***************************************************************************
     * 
@@ -69,5 +71,5 @@ module.exports.dispatcher = {
     *
     ***************************************************************************/
 
-    // appPath: yog.ROOT_PATH + '/app'
-}
+    appPath: yog.ROOT_PATH + '/app'
+};
