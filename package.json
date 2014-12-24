@@ -1,6 +1,6 @@
 {
   "name": "yog2",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,6 @@
   "license": "BSD",
   "dependencies": {
     "lodash": "2.4.1",
-    "yog2-kernel": "0.0.17"
+    "yog2-kernel": "0.0.18"
   }
 }
