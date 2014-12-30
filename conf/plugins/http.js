@@ -141,6 +141,17 @@ module.exports.cookieParser = {
 
 module.exports.bodyParser = {
     urlencoded: {
+
+        /***************************************************************************
+        * 
+        * filter配置
+        *
+        * 可以指定特定的req.path不通过bodyparser.urlencoded处理
+        * 
+        ***************************************************************************/
+
+        // filter: [/\//,/\/index/, /\/home\/index/],
+        
         extended: false
     }
 };
