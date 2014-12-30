@@ -144,13 +144,13 @@ module.exports.bodyParser = {
 
         /***************************************************************************
         * 
-        * filter配置
+        * exclude配置
         *
         * 可以指定特定的req.path不通过bodyparser.urlencoded处理
         * 
         ***************************************************************************/
 
-        // filter: [/\//,/\/index/, /\/home\/index/],
+        // exclude: [/\//,/\/index/, /\/home\/index/],
         
         extended: false
     }
