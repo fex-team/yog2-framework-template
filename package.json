@@ -1,5 +1,5 @@
 {
-  "name": "yog2",
+  "name": "{{-project_name-}}",
   "version": "0.0.13",
   "description": "",
   "main": "index.js",
