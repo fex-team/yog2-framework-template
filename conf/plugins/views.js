@@ -68,10 +68,11 @@ module.exports.views = {
     * 渲染引擎配置
     *
     * 为不同模板后缀指定渲染引擎。默认为 swig，可使用yog-jade
+    *
+    * see [yog-jade](https://github.com/ssddi456/yog-jade)
     * 
     ***************************************************************************/
 
     // engine : {
-    //     jade : require('yog-jade')
     // }
 };
