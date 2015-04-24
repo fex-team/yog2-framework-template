@@ -1,6 +1,6 @@
 {
     "name": "{{-project_name-}}",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -15,6 +15,6 @@
     "license": "BSD",
     "dependencies": {
         "lodash": "2.4.1",
-        "yog2-kernel": "0.1.2"
+        "yog2-kernel": "0.2.2"
     }
 }
