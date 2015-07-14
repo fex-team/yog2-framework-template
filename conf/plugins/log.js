@@ -1,8 +1,13 @@
-/***
- * Yog日志配置
- *
+/**
+ * @file YOG2 日志配置
+ * @author fis@baidu.com
  * 更多的配置可以参考 https://github.com/fex-team/yog-log
  */
+
+/*global yog*/
+
+/*eslint-disable fecs-camelcase, camelcase */
+
 module.exports.log = {
     /***************************************************************************
      *

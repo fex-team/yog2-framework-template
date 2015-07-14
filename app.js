@@ -1,3 +1,8 @@
+/**
+ * @file YOG2 框架启动入口
+ * @author fis@baidu.com
+ */
+
 'use strict';
 
 var yog = require('yog2-kernel');
