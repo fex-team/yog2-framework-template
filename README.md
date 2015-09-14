@@ -1,10 +1,8 @@
-Yog2
+YOG2 框架基础运行时模板
 
-Base on [yog2-kernel](https://github.com/fex-team/yog2-kernel)
+==============================
 
-##Usage
-
-```bash
-npm i
-npm run-script debug
+```
+npm i -g yog2
+yog2 init project
 ```
