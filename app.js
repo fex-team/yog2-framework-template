@@ -14,6 +14,7 @@ var app = yog.bootstrap({
 });
 
 app.set('port', process.env.PORT || 8085);
+app.disable('x-powered-by');
 
 var server = yog.server = app.listen(app.get('port'), function () {
     console.log('Yog server listening on port ' + server.address().port);

@@ -9,7 +9,7 @@
  * 更多的文档可以参考 https://github.com/fex-team/node-ral
  */
 
-/*global yog*/
+/* global yog */
 
 module.exports.ral = {
     /***************************************************************************
