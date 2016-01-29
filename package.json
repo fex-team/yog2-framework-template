@@ -16,6 +16,6 @@
   "dependencies": {
     "lodash": "2.4.1",
     "debuglog": "1.0.1",
-    "yog2-kernel": "0.4.0"
+    "yog2-kernel": "0.5.0"
   }
 }
