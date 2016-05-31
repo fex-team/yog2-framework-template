@@ -23,6 +23,8 @@ var server = yog.server = app.listen(app.get('port'), function () {
 server.on('connection', function (socket) {
     // disable nagle
     socket.setNoDelay(true);
-    // keep-alive timeout
-    socket.setTimeout(60 * 1000);
+});
+
+server.on('clientError', (err, socket) => {
+  socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
