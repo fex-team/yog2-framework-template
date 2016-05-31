@@ -25,6 +25,6 @@ server.on('connection', function (socket) {
     socket.setNoDelay(true);
 });
 
-server.on('clientError', (err, socket) => {
+server.on('clientError', function (err, socket) {
     socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
