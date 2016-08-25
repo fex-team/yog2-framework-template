@@ -4,7 +4,8 @@
  *
  * 负载限制模块
  *
- * 默认不会启用，需要启动需要主动修改http.js中的中间件，建议在responseTime或favicon中间件之前加载
+ * 默认不会启用，需要启动需要主动修改http.js中的中间件配置，添加reqlimit
+ * reqlimit中间件建议在responseTime或favicon中间件之前加载
  */
 
 /* global yog */
